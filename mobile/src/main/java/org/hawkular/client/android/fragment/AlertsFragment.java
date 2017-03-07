@@ -93,12 +93,15 @@ public final class AlertsFragment extends Fragment implements AlertsAdapter.Aler
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle state) {
         return inflater.inflate(R.layout.fragment_list, container, false);
+				Log.i("TAG","Git Testing");
+
     }
 
     @Override
     public void onActivityCreated(Bundle state) {
         super.onActivityCreated(state);
 
+		Log.i("TAG","Git Testing");
         setUpState(state);
 
         setUpBindings();
@@ -106,11 +109,13 @@ public final class AlertsFragment extends Fragment implements AlertsAdapter.Aler
         setUpList();
         setUpMenu();
 
-        isActionPlus = false;
+        isActionPlus = true;
 
-        setUpRefreshing();
+       /* setUpRefreshing();*/
 
+/*
         setUpAlertsUi();
+*/
     }
 
     private void setUpState(Bundle state) {
